@@ -1,0 +1,58 @@
+.defend
+    margin-top: 120px
+    margin-bottom: 100px
+    &__inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__item
+        // box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.08)
+        margin-right: 12px
+        position: relative
+        cursor: pointer
+        &:last-child
+            margin-right: 0
+        &:before
+            content: url('../img/shot.png')
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            display: none
+        &:hover:before
+            display: block
+        img
+            width: 79px
+            height: 79px
+    &__box
+        &-center
+            img 
+                width: 249px
+                height: 249px
+        &-left
+            display: flex
+            position: relative
+            margin-bottom: 85px
+            &:before
+                content: url(../img/line.png)
+                position: absolute
+                bottom: -32px    
+        &-right
+            display: flex
+            position: relative
+            margin-bottom: 85px
+            &:before
+                content: url(../img/line.png)
+                position: absolute
+                bottom: -32px
+                right: 0
+    &__desc
+        width: 80%
+        margin: 0 auto
+        margin-top: 20px
+    &__title
+        margin-bottom: 32px
+    &__subtitle
+        width: 50%
+        margin: 0 auto
+        margin-bottom: 78px

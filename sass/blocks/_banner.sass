@@ -1,0 +1,37 @@
+.banner
+    margin-top: 136px
+    &-bg
+        position: absolute
+        top: 0
+        right: 0
+        z-index: -1
+        img
+            height: 960px
+        // background: url('../img/1.png') right no-repeat
+        // height: 500px
+    &__inner
+        display: flex
+        align-items: center
+    &__text
+        width: 58%
+        &-title
+            margin-bottom: 32px
+        &-desc
+            margin-bottom: 46px
+    &__img
+        img
+            width: 431px
+            height: 431px
+    &__links
+        display: flex
+        width: 7%
+        flex-direction: column
+        align-items: center
+        &-item
+            margin-bottom: 40px
+            transition: all .2s linear
+            &:hover
+                transform: translateY(-5px)
+                svg
+                    path
+                        fill:#F7FC00

@@ -1,0 +1,33 @@
+.prepar
+    margin-top: 120px
+    position: relative
+    &-bg
+        position: absolute
+        top: 10px
+        left: 0
+        z-index: -10
+    &__inner
+        display: flex
+        margin-top: 90px
+    &__img
+        margin-right: 88px
+        img 
+            height: 413px
+            width: 413px
+    &__title
+        width: 50%
+        margin: 0 auto
+    &__text
+        p
+            margin-bottom: 30px
+        ul
+            li
+                padding-left: 20px
+                position: relative
+                margin-bottom: 20px
+                &:before
+                    content: '-'
+                    position: absolute
+                    left: 0
+                    top: 50%
+                    transform: translateY(-50%)
